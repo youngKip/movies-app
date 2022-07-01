@@ -24,7 +24,7 @@ const showMovies = (movies) => {
         <img src="${IMGPATH}${poster_path}" alt="${title}"/>
         <div class="movie__info">
             <h2 class="movie__title">${title}</h2>
-            <span class="{getClassByRate(vote_average)}">${vote_average}</span>
+            <span class="${getClassByRate(vote_average)}">${vote_average}</span>
         </div>
         <div class="overview">
             <h3>Overview</h3>
