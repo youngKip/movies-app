@@ -22,8 +22,8 @@ const showMovies = (movies) => {
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
         <img src="${IMGPATH}${poster_path}" alt="${title}"/>
-        <div class="movie__info">
-            <h2 class="movie__title">${title}</h2>
+        <div class="movie-info">
+            <h2 class="movie-title">${title}</h2>
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
         </div>
         <div class="overview">
