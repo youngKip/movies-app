@@ -5,6 +5,12 @@
 
 <head>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             /*font-family: "Poppins"   sans-serif;*/
             background-color: #22254b;
@@ -13,7 +19,7 @@
         header {
             background-color: #373b69;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             padding: 1rem;
         }
 
@@ -102,6 +108,16 @@
         .movie:hover .overview {
             transform: translateY(0);
         }
+
+        .logo {
+            font-size: 2rem;
+            color: #fff;
+            padding: 0;
+        }
+
+        .vid {
+            color: chartreuse;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,6 +127,9 @@
 
 <body>
     <header>
+        <div class="logo">
+            <h3>Prime <span class="vid">Videos</span></h3>
+        </div>
         <form id="form">
             <input type="text" id="search" placeholder="Search" class="search" />
         </form>
